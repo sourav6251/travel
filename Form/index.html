@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="./index.js"></script>
+    <title>Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>User Registration</h1>
+      <form class="form">
+        <div class="name-group">
+          <div class="form-group first_name" style="flex: 1">
+            <label for="firstname">First Name</label>
+            <input type="text" id="firstname" name="firstname" required />
+          </div>
+          <div class="form-group last_name" style="flex: 1">
+            <label for="lastname">Last Name</label>
+            <input type="text" id="lastname" name="lastname" required />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+
+        <div class="form-group">
+          <label for="address">Street Address</label>
+          <input id="address" name="address" rows="3" required />
+        </div>
+
+        <div class="form-group">
+          <label for="dob">Date of Birth</label>
+          <input type="date" id="dob" name="dob" required />
+        </div>
+
+        <div class="form-group">
+          <label>Gender</label>
+          <div class="gender-group">
+            <label class="gender-option">
+              <input type="radio" name="gender" value="male" required /> Male
+            </label>
+            <label class="gender-option">
+              <input type="radio" name="gender" value="female" /> Female
+            </label>
+            <label class="gender-option">
+              <input type="radio" name="other" value="other" /> Other
+            </label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            pattern="[0-9]{10}"
+            placeholder="1234567890"
+            required
+          />
+        </div>
+        <div class="button">
+          <button type="button"  onclick="submits()">Register Now</button>
+          <button type="reset">Reset Now</button>
+          <!-- <button type="reset" onclick="clear()">Reset Now</button> -->
+        </div>
+      </form>
+    </div>
+    <div class="output_container"></div>
+  </body>
+
+</html>

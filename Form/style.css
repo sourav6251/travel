@@ -1,0 +1,143 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    overflow: hidden; /* Prevent content from overflowing */
+    height: 100%;
+    width: 60%;
+    /* background-color: aquamarine; */
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form {
+    padding-top: 0.31rem;
+    width: 28rem;
+}
+
+.name-group {
+    width: 100%;
+    display: flex;
+    /* height: 3.5rem; */
+}
+
+.form-group {
+    display: flex;
+    margin-top: 1.5rem;
+    height: 3.5rem;
+    justify-content: space-between;
+    flex-direction: column;
+    /* background-color: bisque; */
+}
+
+.first_name {
+    padding-right: 0.51rem;
+}
+
+.last_name {
+    padding-left: 0.51rem;
+}
+
+.form-group input {
+    height: 2rem;
+    padding: 0.6rem;
+    border-radius: 0.5rem;
+    border: none;
+    background-color: #cad3d4;
+}
+
+.form-group input:focus {
+    outline: none;
+}
+
+.gender-group{
+    display: flex;
+    flex-direction: row;
+    width: 17rem;
+    justify-content: space-between;
+}
+.gender-option{
+    display: flex;
+    width: 4rem;
+    flex-direction: row;
+    align-items: center;
+}
+.gender-option input{
+    margin-right: 0.5rem;
+}
+.button{
+    height: 4rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.button button{
+    margin-top: 1.5rem;
+    height: 2rem;
+    width: 6rem;
+    border-radius: 0.5rem;
+    outline: none;
+    border: 1px solid rgb(82, 63, 63);
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+.button button:hover{
+    background-color: rgba(32, 90, 71, 0.568);
+    box-shadow: 3px 2px #005f73;
+    transform: translateY(-3px);
+}
+.output_container {
+    width: 40%;
+    height: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: none;
+    overflow-y: auto;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.output-data {
+    height: fit-content;
+    margin: 1rem 1rem 1rem 1rem;
+    padding: 1rem 0 1rem 1rem;
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.output-data p {
+    margin: 10px 0;
+}
+.delete-button{
+    height: 5rem;
+    width: 4rem;
+    border: 0;
+    background-color: transparent;
+    border-radius: 3rem;
+}
+.delete-button :hover{
+    cursor: pointer;
+    background-color: rgba(194, 37, 37, 0.911);
+    border-radius: 0.5rem;
+
+}
+.delete-button img{
+    height: 50%;
+    width:  50%;
+}
